@@ -2,6 +2,7 @@ package poji;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 public class User implements Serializable {
     /**
@@ -14,6 +15,7 @@ public class User implements Serializable {
     private Date birthday;// 生日
     private String address;// 地址
 
+    private List<Order> orderList;
 
     public Integer getId() {
         return id;
